@@ -5,7 +5,7 @@ module.exports.run = (bot, message, args) => {
   .setTitle("ModBoi Help")
   .setDescription("This is a list of my moderation commands.")
   .addField("Support", "Help\nSupport (coming soon)")
-  .addField("Moderation", "Ban (coming soon)\nHackban (coming soon)\nKick (coming soon)\nUnhackban (coming soon)\nMute (coming soon)\n Unmute (coming soon)"
+  .addField("Moderation", "Ban (coming soon)\nHackban (coming soon)\nKick (coming soon)\nUnhackban (coming soon)\nMute (coming soon)\n Unmute (coming soon)")
   .addField("Bot", "Ping (coming soon)\nUptime (coming soon)")
   .setThumbnail(bot.user.avatarURL)
   .setColor("RANDOM")
