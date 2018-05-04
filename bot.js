@@ -37,7 +37,7 @@ const coresettings = {
 // Ready event.
 
 bot.on('ready', () => {
-  bot.user.setActivity(`Loading ModBoi...`, {type: "STREAMING", url: "https://twitch.tv/freakinghulk"})(
+  bot.user.setActivity(`Loading ModBoi...`, {type: "STREAMING", url: "https://twitch.tv/freakinghulk"})
   setTimeout(() => {
     bot.user.setActivity(`for m!help | ${bot.guilds.size} server(s)`, {type: "WATCHING"})
   }, 10000)
@@ -54,6 +54,8 @@ bot.on('ready', () => {
       }
       if (err) return console.error(err);
     }
+    
+    setthesettings()
     // Done.
   })
 })
