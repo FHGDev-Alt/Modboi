@@ -2,8 +2,8 @@
 const discord = require('discord.js');
 const enmap = require('enmap');
 const bot = new discord.Client();
-const enmaprethink = require('enmap-rethink');
-const rethink = new enmaprethink({ name: 'test' });
+const enmaplevel = require('enmap-level');
+const rethink = new enmaplevel({ name: 'test' });
 const exec = require('child_process').exec
 
 // Done.
