@@ -72,7 +72,7 @@ bot.on('message', async message => {
   //  
   const guildConf = await bot.settings.get(message.guild.id)
   //
-  let cmdcon = mArray[0].slice(prefix)
+  let cmdcon = mArray[0].slice(prefix.length)
   //
   let cmd = bot.commands.get(cmdcon)
   //
