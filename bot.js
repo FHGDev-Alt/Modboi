@@ -5,6 +5,7 @@ const bot = new discord.Client();
 const enmaplevel = require('enmap-level');
 const rethink = new enmaplevel({ name: 'test' });
 const exec = require('child_process').exec
+const prefix = "m!"
 
 // Done.
 
@@ -28,7 +29,6 @@ require('fs').readdir("./commands/", (err, files) => {
 bot.settings = new enmap({provider: rethink})
 
 const coresettings = {
-  prefix: "m!",
   modlogchannel: "guild-bot-log"
 }
 
@@ -80,7 +80,7 @@ bot.on('message', async message => {
   //
   if (!message.guild) return;
   //
-  if (!message.content.startsWith(guildConf.prefix)) return;
+  if (!message.content.startsWith(prefix)) return;
   //
   if (cmd) { 
     //
