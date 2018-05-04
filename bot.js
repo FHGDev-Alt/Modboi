@@ -29,7 +29,7 @@ bot.settings = new enmap({provider: rethink})
 
 const coresettings = {
   prefix: "m!",
-  modlogchannel: "mod-log"
+  modlogchannel: "guild-bot-log"
 }
 
 // Done
