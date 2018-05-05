@@ -1,3 +1,5 @@
+const discord = require('discord.js')
+
 module.exports.run = (bot, message, args) => {
   let member = message.mentions.members.first();
   if (!member) return message.channel.send("You need to mention someone.");
