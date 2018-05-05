@@ -9,7 +9,7 @@ module.exports.run = (bot, message, args) => {
   .setColor("RANDOM")
   .setTimestamp()
   
-  if (!member) return message.channel.send("You need to mention someone.)
+  if (!member) return message.channel.send("You need to mention someone.")
   if (!reason) {
     member.ban()
     embed.setDescription(`:point_right: ${member.user.username} is outta here!`)
