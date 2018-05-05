@@ -5,14 +5,14 @@ module.exports.run = (bot, message, args) => {
   let reason = args.join(" ").slice(1)
   let embed = new discord.RichEmbed()
   .setTitle("ModBoi Banning")
-  .setDescription(`:point_right: ${member.username} is outta here! Reason: ${reason}`)
+  .setDescription(`:point_right: ${member.displayName} is outta here! Reason: ${reason}`)
   .setColor("RANDOM")
   .setTimestamp()
   
   if (!member) return message.channel.send("You need to mention someone.")
   if (!reason) {
     member.ban()
-    embed.setDescription(`:point_right: ${member.username} is outta here!`)
+    embed.setDescription(`:point_right: ${member.displayName} is outta here!`)
     message.channel.send({embed: embed})
   } else {
     member.ban(reason)
