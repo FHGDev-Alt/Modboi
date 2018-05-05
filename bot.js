@@ -84,8 +84,10 @@ bot.on('message', async message => {
   //
   if (cmd) { 
     //
-    cmd.run(bot, message, args)
-    //
+    setTimeout(() => {
+      cmd.run(bot, message, args)
+      //
+    }, 5000)
     console.log(`${message.author.username} used the ${cmdcon} command.`)
     //
   }
