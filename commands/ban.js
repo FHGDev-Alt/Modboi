@@ -1,7 +1,7 @@
 let discord = require('discord.js')
 
 module.exports.run = (bot, message, args) => {
-  let member = message.members.mentions.first();
+  let member = message.mentions.members.first();
   let reason = args.join(" ").slice(1)
   let embed = new discord.RichEmbed()
   .setTitle("ModBoi Banning")
