@@ -3,7 +3,7 @@ let discord = require('discord.js')
 module.exports.run = (bot, message, args) => {
   let member = message.mentions.members.first();
   if (!member) return message.channel.send("You need to mention someone.")
-  let reason = args.join(" ").slice(1)
+  let reason = args.slice(1).join(" ")
   let embed = new discord.RichEmbed()
   .setTitle("ModBoi Banning")
   .setDescription(`:point_right: ${member.displayName} is outta here! Reason: ${reason}`)
