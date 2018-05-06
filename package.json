@@ -6,6 +6,7 @@
     "discord.js": "^11.3.2",
     "snekfetch": "^4.0.0",
     "enmap": "^2.2.1",
-    "enmap-level": "^2.1.0"
+    "enmap-level": "^2.1.0",
+    "ms": "^2.1.1"
   }
 }
