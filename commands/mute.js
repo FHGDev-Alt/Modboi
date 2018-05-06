@@ -4,7 +4,8 @@ const Discord = require('discord.js');
 module.exports.run = (bot, message, args) => {
 	if (message.member.hasPermission("MANAGE_MESSAGES")) {
 		var member = message.mentions.members.first();
-		if(!member) {
+		if (member.user.bot) return message.channel.send(":x: I can't mute bots. :x:")
+		if (!member) {
 			var msgA = [];
 			msgA.push(`= **Muted Members** =\n`)
 
