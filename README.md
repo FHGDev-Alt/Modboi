@@ -1,2 +1,1 @@
-# Modboi
-Just another one of my shitty fucking bots.
+[![Build](https://img.shields.io/badge/GitHub-Deployed-brightgreen.svg)](#)
