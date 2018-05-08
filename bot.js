@@ -100,6 +100,15 @@ bot.on('message', async message => {
 
 // Done.
 
+// Run when a member joins a guild.
+
+bot.on('guildMemberAdd', member => {
+  let guild = member.guild
+  require('./events/guildMemberAdd.js')(bot, guild, member)
+})
+
+// Done.
+
 // Log the bot in.
 
 bot.login(process.env.token)
