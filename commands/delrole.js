@@ -15,6 +15,7 @@ module.exports.run = (bot, message, args) => {
   .setDescription(`Okay! I removed the role ${rolename} from user ${member.user.username}.`)
   .setTimestamp()
   .setFooter(`${message.author.username} removed role ${rolename} from user ${member.user.username}.`)
+  .setColor(`RANDOM`)
   message.channel.send({embed: em})
 }
 
