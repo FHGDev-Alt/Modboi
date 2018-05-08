@@ -1,3 +1,5 @@
+const discord = require('discord.js')
+
 module.exports.run = (bot, message, args) => {
   let role = message.mentions.roles.first();
   if (!role) return message.channel.send(`You need to mention a role.`);
@@ -7,7 +9,7 @@ module.exports.run = (bot, message, args) => {
   let rolename = role.name;
   
   if (!message.guild.roles.get(roleid)) return message.channel.send(`That role doesn't exist...`);
-  member.addRole(role.id);
+  member.addRole(roleid);
   let em = new discord.RichEmbed()
   .setTitle("Hulkbot Addrole")
   .setDescription(`Okay! I added the role ${rolename} to the user <@${member.id}>.`)
