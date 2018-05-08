@@ -6,6 +6,7 @@ const enmaplevel = require('enmap-level');
 const rethink = new enmaplevel({ name: 'test' });
 const exec = require('child_process').exec
 const prefix = "m!"
+const sqldb = require('./sql.js')
 
 // Done.
 
@@ -105,6 +106,7 @@ bot.on('message', async message => {
 bot.on('guildMemberAdd', member => {
   let guild = member.guild
   require('./events/guildMemberAdd.js')(bot, guild, member)
+  sqldb.fire(bot, member, guild)
 })
 
 // Done.
