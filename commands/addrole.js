@@ -15,6 +15,7 @@ module.exports.run = (bot, message, args) => {
   .setDescription(`Okay! I added the role ${rolename} to the user <@${member.id}>.`)
   .setTimestamp()
   .setFooter(`${message.author.username} added role ${rolename} to user ${member.user.username}.`)
+  .setColor(`RANDOM`)
   message.channel.send({embed: em})
 };
 
