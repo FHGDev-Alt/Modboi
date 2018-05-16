@@ -1,5 +1,5 @@
 const sql = require('mysql')
-exports.fire = (bot, member, guild) => {
+module.exports.fire = (bot, member, guild) => {
 
   const connection = sql.createConnection({
       host: process.env.mysqlhost,
