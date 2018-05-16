@@ -87,11 +87,8 @@ bot.on('message', async message => {
     //
     message.channel.startTyping();
     //
-    setTimeout(() => {
       cmd.run(bot, message, args);
       //
-    }, 5000);
-    //
     message.channel.stopTyping();
     //
     console.log(`${message.author.username} used the ${cmdcon} command.`);
