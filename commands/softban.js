@@ -3,7 +3,7 @@ module.exports.run = (bot, message, args) => {
   if (!member) {
     message.channel.send("You need to mention someone.")
   }
-  let reason = args.join(' ');
+  let reason = args.join(' ').slice(1)
   
   if (message.member.hasPermission(["BAN_MEMBERS"])) {
     if (reason) {
