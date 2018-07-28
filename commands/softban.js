@@ -5,7 +5,7 @@ module.exports.run = (bot, message, args) => {
   }
   let reason = args.join(' ');
   
-  if (message.member.hasPermission(["BAN_MEMBERS"] || ["ADMINISTRATOR"]) {
+  if (message.member.hasPermission(["BAN_MEMBERS"])) {
     if (reason) {
       member.ban(reason)
       message.channel.send(`Softbanned ${member.displayName} for reason ${reason}.`)
