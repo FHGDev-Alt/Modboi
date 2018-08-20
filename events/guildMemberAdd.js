@@ -1,3 +1,9 @@
+//const {baselogger} = require('./logger.js')
+
 module.exports = (bot, guild, member) => {
-  // do something
+  guild.channels.forEach(channels => {
+    if (channels.name == "welcome") {
+      
+    }
+  })
 }
