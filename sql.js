@@ -7,12 +7,10 @@ module.exports.fire = (bot, member, guild) => {
       password: process.env.mysqlpass
   })
   
-  connection.connect(err => {
-    if (err) {
-      console.error(err)
-    } else {
-      console.log("MySQL Database ready!")
-    }
+  connection.connect(() => {
+    console.log("MySQL ready!")
+  }).catch(err => {
+    console.error(err) 
   })
   
   connection.query('CREATE TABLE guilds (filter boolean,prefix string)')
