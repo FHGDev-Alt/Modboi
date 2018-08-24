@@ -110,7 +110,7 @@ bot.on('guildMemberAdd', member => {
 
 // Log the bot in.
 
-bot.login(process.env.token)
+bot.login(process.env.bottok)
 
 // Done.
 
