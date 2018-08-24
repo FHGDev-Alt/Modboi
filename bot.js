@@ -5,7 +5,7 @@ const bot = new discord.Client();
 const enmaplevel = require('enmap-level');
 const rethink = new enmaplevel({ name: 'test' });
 const exec = require('child_process').exec
-const prefix = "m!"
+const prefix = "sb;"
 const sqldb = require('./sql.js')
 
 // Done.
