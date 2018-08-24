@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Just another of my shitty fucking bots.",
   "dependencies": {
+    "cheerio": "latest",
     "discord.js": "^11.3.2",
     "snekfetch": "^4.0.0",
     "enmap": "^2.2.1",
